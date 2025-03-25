@@ -12,7 +12,7 @@ export default function Experience(){
     return(
         <>
         <div>
-            <div style={{backgroundColor: "black"}}>
+            <div>
                 <Header/>
             </div>
             <div>

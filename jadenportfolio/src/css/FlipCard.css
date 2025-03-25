@@ -27,15 +27,16 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
+    font-family: sans-serif;
   }
   
   .card-front {
-    background-color: rgb(245, 244, 242);
+    background-color: rgba(245, 244, 242, 0.384);
     color: black;
   }
   
   .card-back {
-    background-color: rgb(245, 244, 242);
+    background-color: rgba(245, 244, 242, 0.384);
     color: black;
     transform: rotateY(180deg);
     padding: 30px;

@@ -12,7 +12,7 @@ export default function Expertise(){
     return(
         <>
         <div>
-            <div style={{backgroundColor: "black"}}>
+            <div>
                 <Header/>
             </div>
             <div>

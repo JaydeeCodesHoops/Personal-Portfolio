@@ -12,7 +12,7 @@ export default function Resume(){
     return(
         <>
         <div>
-            <div style={{backgroundColor: "black"}}>
+            <div>
                 <Header/>
             </div>
             <div>

@@ -7,7 +7,7 @@ const FlipCard = () => {
       <div className="card">
         {/* Front Side */}
         <div className="card-face card-front">
-            <h2 style={{color: "orange"}}>What I Do</h2>
+            <h2 style={{color: "red"}}>What I Do</h2>
         </div>
         {/* Back Side */}
         <div className="card-face card-back">
