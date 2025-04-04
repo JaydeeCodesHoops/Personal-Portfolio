@@ -54,7 +54,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_e5zi0nu', 'template_167nfmf', e.target, 'opuD98V73xjGlerhN');
+    emailjs.sendForm( import.meta.env.VITE_EMAILJS_SERVICE_ID,  import.meta.env.VITE_EMAILJS_TEMPLATE_ID, e.target, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
     alert("Form Successfully Submitted");
     console.log('Form Submitted', formData);
