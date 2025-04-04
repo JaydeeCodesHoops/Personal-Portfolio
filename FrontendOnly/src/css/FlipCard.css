@@ -55,6 +55,12 @@
       margin: 15px auto; /* Center the card and add margin for spacing */
   }
 
+  .card-front {
+    color: black;
+    background-image: url('src/assets/codingBG1.jpg');
+    background-size: cover; /* Ensure background covers the area */
+  }
+
   .card-container:hover {
       margin: 25px auto; /* Increase margin on hover for spacing effect */
   }
