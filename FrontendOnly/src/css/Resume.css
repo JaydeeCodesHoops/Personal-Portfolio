@@ -128,6 +128,20 @@
 }
 
 @media (max-width: 768px){
+    .resumeBody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url('../assets/white-gradient.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .emailAndNumber{
         flex-direction: column;
         margin-top: 20px;
