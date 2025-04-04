@@ -6,7 +6,7 @@
     position: relative;
     width: 100vw;
     overflow: hidden;
-    background-image: url('../assets/white-gradient.jpeg');
+    background-image: url('../assets/white-background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@
       position: relative;
       width: 100vw;
       overflow: hidden;
-      background-image: url('../assets/white-gradient.jpeg');
+      background-image: url('../assets/white-background.jpg');
       background-attachment: fixed;
       background-size: cover;
       background-repeat: no-repeat;
