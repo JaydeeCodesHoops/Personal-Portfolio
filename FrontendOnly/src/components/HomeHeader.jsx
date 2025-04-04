@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import J from '../assets/jaydee.png';
-import '../css/homePage.css';
+import '../css/HomePage.css';
 
 export default function Header() {
     const navigate = useNavigate();
