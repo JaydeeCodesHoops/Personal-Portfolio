@@ -1,0 +1,215 @@
+.experience-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('../assets/white-gradient.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 60px;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px;
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }
+  
+  .experience-item {
+    background-color: #f9f9f9c4;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+  }
+  
+  .experience-item:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .experience-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .experience-icon {
+    font-size: 2.5rem;
+    margin-right: 15px;
+    color: #3182ce;
+  }
+  
+  .experience-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .experience-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .experience-company {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .experience-duration {
+    color: #888;
+    font-size: 0.8rem;
+  }
+  
+  .experience-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .experience-description.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 15px;
+  }
+  
+  .technologies-used {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .technologies-used h4 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .tech-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+  
+  .tech-tag {
+    background-color: #e6f2ff;
+    color: #2c5282;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    background-color: #d3eaff;
+    border: 2px solid transparent; /* Reserve space for the border upon hover */
+  }
+
+  .tech-tag:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #3182ce;
+    border: 2px solid #3182ce;
+  }
+  
+  .expand-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #888;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .linkText{
+    color: green;
+  }
+
+  @media (max-width: 768px) {
+    .experience-page {
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .page-title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+
+    .experience-grid {
+        display: flex; /* Change to flex for better responsiveness */
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce gap between items */
+        width: calc(100% - 20%); /* Change to full width */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .experience-item {
+        margin: auto;
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center children vertically */
+        text-align: center;
+        padding: 20px; /* Adjust padding */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Prevent overflow */
+        margin-bottom: 20px;
+    }
+
+    .experience-header {
+        align-items: center; /* Center items */
+    }
+
+    .experience-title-container {
+        width: 100%; /* Full width for title container */
+    }
+
+    .experience-title {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    .experience-description {
+        text-align: center; /* Center text */
+    }
+
+    .technologies-used {
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .tech-tags {
+        justify-content: center; /* Center tags */
+        gap: 4px; /* Adjust gap */
+    }
+}

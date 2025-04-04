@@ -1,0 +1,14 @@
+.myTeamContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 50px;
+}
+
+.teamImage{
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+}

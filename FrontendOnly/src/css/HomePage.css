@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+}
+
+.blur {
+    filter: blur(25px);
+    transition: filter 0.3s ease;
+}
+
+.homeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100vw;
+}
+
+.homeFooter {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: calibri;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jadenImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.nameImage {
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.header-item {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header-item:hover {
+    color: brown;
+}
+
+.header-item.active {
+    color: black;
+    font-weight: bold;
+}
+
+.active-underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    border-radius: 2px;
+}
+
+.otherPagesButtons {
+    display: flex;
+    gap: 70px;
+    margin-right: 150px;
+    color: black;
+    font-size: 20px;
+}
+
+#header1:hover, #header2:hover, #header3:hover, #header4:hover, #header5:hover, #header6:hover, #header7:hover {
+    cursor: pointer;
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.homeBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Background Blur Effect */
+.homeBody::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/white-gradient.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.selfIntroSection {
+    display: flex;
+    width: 70vw;
+    gap: 50px;
+    color: black;
+    border: 2px solid rgb(158, 158, 158);
+    padding: 45px;
+    border-radius: 35px;
+}
+
+.selfIntroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selfIntroImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homePageContent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: calibri;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.homePageContent2 {
+    margin-bottom: 70px;
+    color: saddlebrown;
+}
+
+.WhatandWhy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.WhatandWhyHeading {
+    background-color: #A67B5B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    width: 85vw;
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+
+.homePageContent3 {
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: calibri;
+    text-align: center;
+}
+
+.content3Content {
+    margin-bottom: 120px;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    text-align: center;
+}
+
+.homePageContent4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: calibri;
+    gap: 120px;
+    margin-bottom: 100px;
+}
+
+.challenges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+.challengesHeading {
+    background-color: #A67B5B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    width: 85vw;
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+
+.challenge1, .challenge2, .challenge3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 80vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.challenge1Image, .challenge2Image, .challenge3Image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.challenge1Text, .challenge2Text, .challenge3Text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    min-height: 350px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+}
+
+.nav-links {
+    display: flex; /* Show links in a row on larger screens */
+    gap: 20px; /* Space between options */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nameImage{
+        max-width: 160px;
+        height: 80px;
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        position: fixed; /* Use fixed positioning */
+        top: 50px; /* Adjust based on header height */
+        margin: auto;
+        background-color: rgb(199, 198, 198); /* Background color for dropdown */
+        width: 70%; /* Full width */
+        height: 85%;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        z-index: 1000; /* Ensure it overlays other content */
+    }
+
+    .nav-links.open {
+        display: flex; /* Show links when open */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid gray;
+        border-radius: 25px;
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Stack items in the dropdown */
+        padding: 10px; /* Padding around the list */
+    }
+
+    .selfIntroSection {
+        flex-direction: column;
+        width: 90vw;
+        padding: 20px;
+    }
+
+    .homePageContent1, .homePageContent4 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .homePageContent3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content3Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .homeHeader{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .homeFooter{
+        font-size: 10px;
+    }
+
+  .otherPagesButtons {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+    .challenge1, .challenge2, .challenge3 {
+        flex-direction: column;
+        gap: 30px;
+        width: 90vw;
+    }
+
+    .WhatandWhyHeading, .challengesHeading{
+        border-radius: 25px;
+        font-size: 15px;
+        text-align: center;
+        width: 85vw;
+    }
+}
