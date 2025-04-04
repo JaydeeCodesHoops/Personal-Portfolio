@@ -60,8 +60,8 @@ export default function Contact() {
     console.log('Form Submitted', formData);
     // Reset form after submission
     setFormData({
-      user_name: '',
-      user_email: '',
+      name: '',
+      email: '',
       message: ''
     });
   };
@@ -137,13 +137,12 @@ export default function Contact() {
               <label htmlFor="name">Name</label>
               <input
                 type="text"
-                id="user_name"
+                id="name"
                 name="user_name"
-                value={formData.user_name}
+                value={formData.name}
                 onChange={handleChange}
                 required
                 placeholder="Your Name"
-                style={{ color: 'black' }} 
               />
             </div>
             
@@ -151,13 +150,12 @@ export default function Contact() {
               <label htmlFor="email">Email</label>
               <input
                 type="email"
-                id="user_email"
+                id="email"
                 name="user_email"
-                value={formData.user_email}
+                value={formData.email}
                 onChange={handleChange}
                 required
                 placeholder="Your Email"
-                style={{ color: 'black' }} 
               />
             </div>
             

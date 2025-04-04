@@ -13,7 +13,7 @@ import http from '../assets/HTTP-request.png';
 import azure from '../assets/azure.png';
 import backend from '../assets/backend.png';
 import wordpress from '../assets/wordpress.png';
-import wordpressUI from '../assets/wordpressUI.PNG';
+import wordpressUI from '../assets/wordpressUI.png';
 import '../css/Expertise.css'
 
 const ExpertiseItem = ({ icon: Icon, title, description1, description2, image, image2, figure }) => {
