@@ -16,7 +16,8 @@ export default function Challenges(){
                 </div>
                 <div className="challenge1Text">
                     <h1 style={{color: "saddlebrown"}}>Time Management</h1>
-                    <p style={{fontSize: "20px", color: "black"}}>This was an issue when I started out coding but I learnt to point out what the issue was before solving it. My whole focus changed, I managed my time correctly along with seperating most important tasks from least important tasks.</p>
+                    <p style={{fontSize: "20px", color: "black"}}>This was an issue when I started out coding but I quickly learnt how to overcome time management. 
+                    I listed my priorities from urgent to not that important. Once I discovered what was high priority in my life I would focus on it, resolve it and gain momentum henceforth. This would then lead me to a smoother process in completing tasks timeously.</p>
                 </div>
              </div>
 
@@ -25,7 +26,7 @@ export default function Challenges(){
              <div className="challenge2">
                 <div className="challenge2Text">
                     <h1 style={{color: "saddlebrown"}}>Communication</h1>
-                    <p style={{fontSize: "20px", color: "black"}}>It has been a challenge as all of my colleagues was not as open as I was, so it was not easy to communicate.<br/><br/> I have learnt to speak more to them until we became comfortable with each other in order to work efficiently.</p>
+                    <p style={{fontSize: "20px", color: "black"}}>As we know it's a means of sending and receiving information. Just as developing apps is what we put in is what we get out. So too is the importance of communicating clearly and efficiently to our peers and colleagues in order to ensure no broken communication. It's vital that the team working on projects together understand each other and  place the project at hand as the number 1 focal point. 1 spirit 1 goal.</p>
                 </div>
                 <div className="challenge2Image">
                     <img style={{width: "80%", height: "400px"}} src={Comm} alt="time management image"/>
@@ -39,8 +40,8 @@ export default function Challenges(){
                     <img style={{width: "80%", height: "400px"}} src={selfEsteem} alt="time management image"/>
                 </div>
                 <div className="challenge3Text">
-                    <h1 style={{color: "saddlebrown"}}>Low Self-Esteem</h1>
-                    <p style={{fontSize: "20px", color: "black"}}>I always tended to compare myself with others that had background knowledge in IT and this broke me abit but, I stopped comparing myself to others and rather focused on improving myself in every possible way so that I may feel much better too which will definitely help my growth within this industry.</p>
+                    <h1 style={{color: "saddlebrown"}}>Identity</h1>
+                    <p style={{fontSize: "20px", color: "black"}}>Often times when we enter into a new space we feel threatened by others because of their experience and character not realizing that they have also been in our shoes before. I felt not good enough at one stage as a developer and quickly realized that being a student is too learn and grow from there. Having identity of who you are in the season where you at brings understanding and purpose. As time went on I became way more confident and then started flowing in my role. Everyday I learn and strive to do better and that excites me.</p>
                 </div>
              </div>
         </div>

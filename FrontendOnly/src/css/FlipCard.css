@@ -34,8 +34,9 @@
 
 .card-front {
   color: black;
-  background-image: url('src/assets/codingBG1.jpg');
+  background-image: url('src/assets/greyLineGradient.jpg');
   background-size: cover; /* Ensure background covers the area */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-back {
@@ -45,6 +46,7 @@
   padding: 40px;
   height: auto; /* Allow height to adjust based on content */
   min-height: 150px; /* Set a minimum height for better text fit */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Styles */
@@ -53,12 +55,6 @@
       width: 90%; /* Increase width for smaller screens */
       height: 200px; /* Adjust height */
       margin: 15px auto; /* Center the card and add margin for spacing */
-  }
-
-  .card-front {
-    color: black;
-    background-image: url('src/assets/codingBG1.jpg');
-    background-size: cover; /* Ensure background covers the area */
   }
 
   .card-container:hover {
