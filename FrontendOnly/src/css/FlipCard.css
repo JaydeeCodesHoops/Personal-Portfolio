@@ -34,7 +34,7 @@
 
 .card-front {
   color: black;
-  background-image: url('src/assets/greyLineGradient.jpg');
+  background-image: url('/image/greyLineGradient.jpg');
   background-size: cover; /* Ensure background covers the area */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
