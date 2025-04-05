@@ -277,10 +277,9 @@
       width: 100vw;
       overflow: hidden;
       background-image: url('../assets/white-background.jpg');
-      background-attachment: scroll;
-      background-size: contain;
+      background-attachment: fixed;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
       margin: 0 auto;
       font-family: Arial, sans-serif;
     }
