@@ -278,7 +278,7 @@ body {
         position: fixed; /* Use fixed positioning */
         top: 50px; /* Adjust based on header height */
         margin: auto;
-        background-color: rgb(199, 198, 198); /* Background color for dropdown */
+        background-color: rgb(255, 255, 255); /* Background color for dropdown */
         width: 70%; /* Full width */
         height: 85%;
         justify-content: center; /* Center items horizontally */
