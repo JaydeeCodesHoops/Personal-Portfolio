@@ -22,6 +22,7 @@ const ExpertiseItem = ({ icon: Icon, title, description1, description2, image, i
   return (
     <div 
       className={`expertise-item ${isExpanded ? 'expanded' : ''}`}
+      data-cy="toggle-div"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="expertise-header">
@@ -31,7 +32,7 @@ const ExpertiseItem = ({ icon: Icon, title, description1, description2, image, i
         <h3 className="expertise-title">{title}</h3>
       </div>
       
-      <div className={`expertise-description ${isExpanded ? 'show' : ''}`}>
+      <div className={`expertise-description ${isExpanded ? 'show' : ''}`} data-cy="expanded-content">
         <div className="unorderedList">
             <li>{description1}</li>
             <li>{description2}</li>

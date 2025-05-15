@@ -71,12 +71,19 @@
     font-size: 20px;
 }
 
-#header1:hover, #header2:hover, #header3:hover, #header4:hover, #header5:hover, #header6:hover, #header7:hover {
+#header1:hover,
+#header2:hover,
+#header3:hover,
+#header4:hover,
+#header5:hover,
+#header6:hover,
+#header7:hover {
     cursor: pointer;
 }
 
 body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
 
 .homeBody {
@@ -220,7 +227,9 @@ body {
     border-radius: 15px;
 }
 
-.challenge1, .challenge2, .challenge3 {
+.challenge1,
+.challenge2,
+.challenge3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +239,9 @@ body {
     margin-bottom: 50px;
 }
 
-.challenge1Image, .challenge2Image, .challenge3Image {
+.challenge1Image,
+.challenge2Image,
+.challenge3Image {
     flex: 1;
     display: flex;
     align-items: center;
@@ -238,7 +249,9 @@ body {
     text-align: center;
 }
 
-.challenge1Text, .challenge2Text, .challenge3Text {
+.challenge1Text,
+.challenge2Text,
+.challenge3Text {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -247,22 +260,27 @@ body {
     text-align: center;
     gap: 10px;
     min-height: 350px;
+    font-family: sans-serif;
+
 }
 
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
-    display: none; /* Hidden by default on larger screens */
+    display: none;
+    /* Hidden by default on larger screens */
 }
 
 .nav-links {
-    display: flex; /* Show links in a row on larger screens */
-    gap: 20px; /* Space between options */
+    display: flex;
+    /* Show links in a row on larger screens */
+    gap: 20px;
+    /* Space between options */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .nameImage{
+    .nameImage {
         max-width: 160px;
         height: 80px;
         margin-left: 0px;
@@ -270,24 +288,34 @@ body {
     }
 
     .menu-icon {
-        display: block; /* Show hamburger icon on mobile */
+        display: block;
+        /* Show hamburger icon on mobile */
     }
 
     .nav-links {
-        display: none; /* Hide links by default on mobile */
-        position: fixed; /* Use fixed positioning */
-        top: 50px; /* Adjust based on header height */
+        display: none;
+        /* Hide links by default on mobile */
+        position: fixed;
+        /* Use fixed positioning */
+        top: 50px;
+        /* Adjust based on header height */
         margin: auto;
-        background-color: rgb(255, 255, 255); /* Background color for dropdown */
-        width: 70%; /* Full width */
+        background-color: rgb(255, 255, 255);
+        /* Background color for dropdown */
+        width: 70%;
+        /* Full width */
         height: 85%;
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-        z-index: 1000; /* Ensure it overlays other content */
+        justify-content: center;
+        /* Center items horizontally */
+        align-items: center;
+        /* Center items vertically */
+        z-index: 1000;
+        /* Ensure it overlays other content */
     }
 
     .nav-links.open {
-        display: flex; /* Show links when open */
+        display: flex;
+        /* Show links when open */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -297,8 +325,10 @@ body {
     }
 
     .nav-links ul {
-        flex-direction: column; /* Stack items in the dropdown */
-        padding: 10px; /* Padding around the list */
+        flex-direction: column;
+        /* Stack items in the dropdown */
+        padding: 10px;
+        /* Padding around the list */
     }
 
     .selfIntroSection {
@@ -307,12 +337,13 @@ body {
         padding: 20px;
     }
 
-    .homePageContent1, .homePageContent4 {
+    .homePageContent1,
+    .homePageContent4 {
         margin-top: 30px;
         margin-bottom: 50px;
     }
 
-    .homePageContent3{
+    .homePageContent3 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -328,32 +359,36 @@ body {
         margin-bottom: 40px;
     }
 
-    .homeHeader{
+    .homeHeader {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
 
-    .homeFooter{
+    .homeFooter {
         font-size: 10px;
     }
 
-  .otherPagesButtons {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
+    .otherPagesButtons {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 
-    .challenge1, .challenge2, .challenge3 {
+    .challenge1,
+    .challenge2,
+    .challenge3 {
         flex-direction: column;
         gap: 30px;
         width: 90vw;
     }
 
-    .WhatandWhyHeading, .challengesHeading{
+    .WhatandWhyHeading,
+    .challengesHeading {
         border-radius: 25px;
         font-size: 15px;
         text-align: center;
@@ -369,7 +404,7 @@ body {
         width: 100vw;
         overflow-x: hidden;
     }
-    
+
     /* Background Blur Effect */
     .homeBody::before {
         content: "";
